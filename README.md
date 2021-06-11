@@ -5,7 +5,7 @@ Background based on Django！
 
 欢迎交流：
 
-@ 邮箱：kurolz@163.com
+@ 邮箱：asd008699@gmail.com
 
 @ 个人博客： [http://www.mykurol.com](http://www.mykurol.com)  
 
