@@ -197,10 +197,10 @@ DATABASES = {
 [root@VM_34_67_centos DjangoWeb]# docker inspect 1bf8642343e3 | grep IPAddress
             "SecondaryIPAddresses": null,
             "IPAddress": "115.29.37.222",
-                    "IPAddress": "http://115.29.37.222",
+                    "IPAddress": "115.29.37.222",
 ```
 ```Bash
-[root@VM_34_67_centos DjangoWeb]# iptables -t nat -A  DOCKER -p tcp --dport 80 -j DNAT --to-destination 172.17.0.3:8000     
+[root@VM_34_67_centos DjangoWeb]# iptables -t nat -A  DOCKER -p tcp --dport 80 -j DNAT --to-destination 115.29.37.222:8000     
 ```
 
 现在可以将项目移入新建的项目中
