@@ -108,7 +108,7 @@ db:
 
 web:
   build: .
-  command: python ./DjangoWeb/manage.py runserver 0.0.0.0:8000
+  command: python ./DjangoWeb/manage.py runserver 115.29.37.222/:8000
   volumes:
     - .:/code
   ports:
@@ -196,8 +196,8 @@ DATABASES = {
 ```Bash
 [root@VM_34_67_centos DjangoWeb]# docker inspect 1bf8642343e3 | grep IPAddress
             "SecondaryIPAddresses": null,
-            "IPAddress": "172.17.0.3",
-                    "IPAddress": "172.17.0.3",
+            "IPAddress": "115.29.37.222",
+                    "IPAddress": "http://115.29.37.222",
 ```
 ```Bash
 [root@VM_34_67_centos DjangoWeb]# iptables -t nat -A  DOCKER -p tcp --dport 80 -j DNAT --to-destination 172.17.0.3:8000     
